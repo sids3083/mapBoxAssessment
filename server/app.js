@@ -6,7 +6,7 @@ dotenv.config();
 
 //===================Server Configs===========================
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 //===================Middleware===========================
 app.use(bodyParser.json());
@@ -16,6 +16,7 @@ app.use(cors());
 const userRouter = require('./src/routes/users.router');  
 const postRouter = require('./src/routes/posts.router');
 const commentRouter = require('./src/routes/comments.router');
+const db = require("./db");
 
 //===================Routes-USES===========================
 app.use('/api', userRouter);
@@ -30,7 +31,8 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-
+//===================DB Connection===========================
+db.inital();
 
 
 

@@ -6,7 +6,6 @@ exports.getUserByUsername  = async (req, res) => {
     const username = req.params.username;
 
     try {
-
       const result = await db.query('SELECT * FROM users WHERE username = $1', [username]);
   
       if (result.rows.length > 0) {
@@ -37,7 +36,7 @@ exports.getAllUser  = async (req, res) => {
       const result = await db.query('INSERT INTO users (username) VALUES ($1) RETURNING *', [
         username,
       ]);
-      res.json({success:true,message:"User created successfully",data:result.rows[0]});
+      res.status(201).json({success:true,message:"User created successfully",data:result.rows[0]});
     } catch (error) {
       res.status(500).send({success:false,message:error.message});
       res.status(500).send({success:false,message:error.message});  

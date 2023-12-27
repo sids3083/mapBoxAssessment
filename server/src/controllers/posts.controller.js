@@ -32,7 +32,7 @@ exports.getPostByUsername = async (req, res) => {
       res.status(404).json({ success: false, message: "Blogs Not found for this user" });
     }
   } catch (error) {
-    res.status(404).json({ success: false, message: error.message });
+    res.status(500).json({ success: false, message: error.message });
   }
 }
 

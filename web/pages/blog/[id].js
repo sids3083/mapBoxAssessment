@@ -93,7 +93,7 @@ const blogSingle = ({ blog, id }) => {
                   Post comment
                 </button>
               </form>
-              <h2 className="mb-4 text-2xl font-bold leading-tight text-gray-900 lg:mb-6 lg:text-3xl dark:text-white">Comments ({comments.length + 1})</h2>
+              <h2 className="mb-4 text-2xl font-bold leading-tight text-gray-900 lg:mb-6 lg:text-3xl dark:text-white">Comments ({comments.length})</h2>
               {
                 comments && comments.length > 0 && comments.reverse().map((comment, index) => (
                   <article key={index} className="p-6 mb-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">

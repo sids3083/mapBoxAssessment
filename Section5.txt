@@ -1,0 +1,13 @@
+Steps to encounters performance issues in database:
+
+	1.	Monitor Database Metrics: Like, CPU usage, disk I/O, and buffer cache hit ratio.
+	2.	Check Cloud Infrastructure: 
+        (i) Location of Database 
+        (ii) increase database resources if required 
+        (iii) Use node balancers if traffic is too much.
+	3.	Identify Slow Apis Or Queries: Identify/Analyse queries using logs present in logger.
+	4.	Optimize Queries: Optimize identified queries by removing irrelevant parameters, joins, loops, etc.
+	5.	Review Database Models:Ensure tables have primary keys and foreign keys where necessary, Normalize or denormalize tables based on query patterns, Optimize data types, etc
+	6.	Caching: We can use caching to reduce the load on database.
+
+Note: There can be many more steps depending on situations.
