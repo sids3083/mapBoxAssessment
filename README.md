@@ -4,13 +4,13 @@
 
 ### :camera: Screenshots
 
-![Screenshot (89)](./screenshots/Screenshot%202023-12-27%20at%208.48.46 PM.png)
+![Screenshot (89)](https://nanostack.s3.ap-south-1.amazonaws.com/1703692418660Screenshot%202023-12-27%20at%208.48.46%E2%80%AFPM.png)
 
 ##
-![Screenshot (79)](./screenshots/Screenshot%202023-12-27%20at%208.48.19 PM.png)
+![Screenshot (79)](https://nanostack.s3.ap-south-1.amazonaws.com/1703692353435Screenshot%202023-12-27%20at%208.48.19%E2%80%AFPM.png)
 
 ##
-![Screenshot (82)](./screenshots/Screenshot%202023-12-27%20at%208.48.32 PM.png)
+![Screenshot (82)](https://nanostack.s3.ap-south-1.amazonaws.com/1703692373217Screenshot%202023-12-27%20at%208.48.32%E2%80%AFPM.png)
 
 
 # 🏃‍♀️ Running
